@@ -1,0 +1,51 @@
+--proj
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox"
+--build-exe
+--input
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+--output
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/obj/qsharp/"
+--references
+    "/Users/jmetzger/.nuget/packages/azure.core/1.14.0/lib/netcoreapp2.1/Azure.Core.dll"
+    "/Users/jmetzger/.nuget/packages/azure.identity/1.4.0/lib/netstandard2.0/Azure.Identity.dll"
+    "/Users/jmetzger/.nuget/packages/azure.quantum.jobs/1.0.0-beta.2/lib/netstandard2.0/Azure.Quantum.Jobs.dll"
+    "/Users/jmetzger/.nuget/packages/azure.storage.blobs/12.2.0/lib/netstandard2.0/Azure.Storage.Blobs.dll"
+    "/Users/jmetzger/.nuget/packages/azure.storage.common/12.1.1/lib/netstandard2.0/Azure.Storage.Common.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.azure.quantum.client/0.18.2106148911/lib/netstandard2.1/Microsoft.Azure.Quantum.Client.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.identity.client/4.30.1/lib/netcoreapp2.1/Microsoft.Identity.Client.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.identity.client.extensions.msal/2.18.4/lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.BondSchemas.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.entrypointdriver/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.EntryPointDriver.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsCompilationManager.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsCompiler.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsCore.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsDataStructures.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsDocumentationParser.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.qsharp.core/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QSharp.Core.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.qsharp.foundation/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QSharp.Foundation.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsOptimizations.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsSyntaxProcessor.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsTextProcessor.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsTransformations.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.runtime.core/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Runtime.Core.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.simulators/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Simulation.Common.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.simulators/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.simulators/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Simulators.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.standard/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Standard.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.targets.interfaces/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Targets.Interfaces.dll"
+    "/Users/jmetzger/.nuget/packages/windowsazure.storage/9.3.3/lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll"
+    "/Users/jmetzger/.nuget/packages/numsharp/0.20.5/lib/netstandard2.0/NumSharp.Core.dll"
+--load
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.csharpgeneration/0.18.2106148911/build//../lib/netstandard2.1/Microsoft.Quantum.CSharpGeneration.dll"
+--runtime
+    FullComputation
+--skip-monomorphization
+--package-load-fallback-folders
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/bin/Debug/netcoreapp3.1/"
+--assembly-properties
+    AssemblyName:ConsoleSandbox
+    ProcessorArchitecture:Unspecified
+    QSharpOutputType:QSharpExe
+    ExecutionTarget:Any
+    DocsPackageId:ConsoleSandbox
