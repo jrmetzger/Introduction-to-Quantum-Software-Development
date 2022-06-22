@@ -20,8 +20,8 @@ namespace QSharpExercises.Lab1 {
     /// # Remarks
     /// This will show you how to apply quantum gates to qubits in Q#.
     operation Exercise1 (target: Qubit) : Unit {
-        // TODO
-        fail "Not implemented.";
+        X(target);
+
     }
 
     /// # Summary
@@ -45,8 +45,10 @@ namespace QSharpExercises.Lab1 {
     /// This should show you how to use single-qubit gates to put qubits into
     /// uniform quantum superpositions.
     operation Exercise2 (targetA : Qubit, targetB : Qubit) : Unit {
-        // TODO
-        fail "Not implemented.";
+        H(targetA);
+
+        Exercise1(targetB);
+        H(targetB);
     }
 
 
@@ -73,8 +75,11 @@ namespace QSharpExercises.Lab1 {
         // a double for floating-point arithmetic. Q# won't let you do arithmetic
         // between Doubles and Ints directly.
 
-        // TODO
-        fail "Not implemented.";
+        // Go through Array indexes
+        for i in 0 .. Length(qubits) - 1 {
+            Ry(PI() / 12.0 * IntAsDouble(i), qubits[i]);
+        }
+
     }
 
 
@@ -103,7 +108,18 @@ namespace QSharpExercises.Lab1 {
         // and update each of its values with the apply-and-replace operator, or
         // append each Int to the array as you go. Use whichever method you prefer.
 
-        // TODO
-        fail "Not implemented.";
+        //mutable resultArray = [0, size = Length(qubits)];
+        //for i in 0 .. Length(qubits) - 1 {
+        //    let result = M(qubits[i]);
+        //    let resultInt = (result == Zero ? 0 | 1);
+        //    set resultArray w/= i <- resultInt;
+        //}
+
+        mutable resultArray = [];
+        for qubit in qubits {
+            set resultArray += [(M(qubit) == Zero ? 0 | 1)];
+        }
+        return resultArray;
+
     }
 }

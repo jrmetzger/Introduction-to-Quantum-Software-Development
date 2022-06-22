@@ -28,8 +28,10 @@ namespace QSharpExercises.Lab3 {
     /// superpositions, where a register is in a combination of all possible
     /// states, and each state has an equal amplitude to the others.
     operation Exercise1 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        // for qubit in register {
+        //    H(qubit)
+        //}
+        ApplyToEach(H, register);
     }
 
 
@@ -61,8 +63,8 @@ namespace QSharpExercises.Lab3 {
         // in "QSharpReference.qs". It will show you the syntax for running a
         // gate in controlled mode with more than one control qubit.
 
-        // TODO
-        fail "Not implemented.";
+        Exercise1(register);
+        Controlled X(register, target);
     }
 
 
@@ -96,8 +98,33 @@ namespace QSharpExercises.Lab3 {
         // the qubits are in the |0> state, to the state |111> so the register
         // can be used as a set of control qubits.
 
-        // TODO
-        fail "Not implemented.";
+        ApplyToEach(H, register);
+        // 1/√8(|000,0> + |001,0> + |010,0> + |011,0>
+        //    + |100,0> + |101,0> + |110,0> + |111,0>)
+
+        //X(register[0]);
+        // 1/√8(|100,0> + |101,0> + |110,0> + |111,0>
+        //    + |000,0> + |001,0> + |010,0> + |011,0>)
+
+        //X(register[1]);
+        // 1/√8(|110,0> + |111,0> + |100,0> + |101,0>
+        //    + |010,0> + |011,0> + |000,0> + |001,0>)
+
+        Controlled X(register, target);
+        // 1/√8(|000,0> + |001,0> + |010,0> + |011,0>
+        //    + |100,0> + |101,0> + |110,0> + |111,1>)
+
+        X(register[0]);
+        // 1/√8(|100,0> + |101,0> + |110,0> + |111,0>
+        //    + |000,0> + |001,0> + |010,0> + |011,1>)
+        
+        X(register[1]);
+        // 1/√8(|110,0> + |111,0> + |100,0> + |101,0>
+        //    + |010,0> + |011,0> + |000,0> + |001,1>)
+
+        // 1/√8(|000,0> + |001,1> + |010,0> + |011,0>
+        //    + |100,0> + |101,0> + |110,0> + |111,0>)
+
     }
 
 
@@ -127,8 +154,15 @@ namespace QSharpExercises.Lab3 {
         // the positive states are on one side together, and the negative
         // states are on the other side together.
 
-        // TODO
-        fail "Not implemented.";
+        for register in registers {
+            ApplyToEach(H, register);
+        }
+        // All three registers are now
+        // 1/√8(|000> + |001> + |010> + |011>
+        //    + |100> + |101> + |110> + |111>)
+        Z(registers[0][2]);
+        Z(registers[1][1]);
+        Z(registers[2][0]);
     }
 
 
@@ -165,8 +199,19 @@ namespace QSharpExercises.Lab3 {
         // Once you've allocated and flipped the target qubit, your goal is to
         // use that information to flip the phase of the |110> state.
 
-        // TODO
-        fail "Not implemented.";
+        use ancilla = Qubit();
+        ApplyToEach(H, register);
+        // 1/√8(|000,0> + |001,0> + |010,0> + |011,0>
+        //    + |100,0> + |101,0> + |110,0> + |111,0>)
+        X(ancilla);
+        // 1/√8(|000,1> + |001,1> + |010,1> + |011,1>
+        //    + |100,1> + |101,1> + |110,1> + |111,1>)
+        X(register[2]);
+        Controlled Z(register, ancilla);
+        X(register[2]);
+        // 1/√8(|000,1> + |001,1> + |010,1> + |011,1>
+        //    + |100,1> + |101,1> - |110,1> + |111,1>)
+        X(ancilla);
     }
 
 
@@ -194,8 +239,11 @@ namespace QSharpExercises.Lab3 {
         // in square brackets: 
         //      let newArray = [someQubit];
 
-        // TODO
-        fail "Not implemented.";
+        H(register[0]);
+        // 1/√2(|00> + |10>) + 1/2(|10> + |11>)
+        Controlled H(register[0 .. 0], register[1]);
+        //Controlled H([register[0]], register[1]);
+
     }
 
 
@@ -222,8 +270,19 @@ namespace QSharpExercises.Lab3 {
         // Note: It is possible (but challenging) to prepare this state
         // without using an ancilla qubit.
 
-        // TODO
-        fail "Not implemented.";
+        Exercise6(register);
+        CNOT(register[1], register[2]);
+        //use ancilla = Qubit() {
+        //    within {
+        //        X(ancilla);
+        //        X(register[1]);
+        //        X(register[2]);
+		//	} apply {
+        //       Controlled Z(register, ancilla);
+		//    }
+        //}
+        Z(register[0]);
+        Z(register[1]);
     }
 
 
@@ -253,8 +312,11 @@ namespace QSharpExercises.Lab3 {
     /// ## register
     /// A two-qubit register in the |00> state.
     operation Challenge1 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        X(register[0]);
+        Controlled H([register[0]], register[1]);
+        X(register[0]);
+        
+        Ry(-2.0 * ArcCos(Sqrt(2.0/3.0)), register[0]);
     }
 
 
@@ -271,8 +333,15 @@ namespace QSharpExercises.Lab3 {
     /// ## register
     /// A three-qubit register in the |000> state.
     operation Challenge2 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        X(register[0]);
+        
+        CNOT(register[0], register[2]);
+        CNOT(register[0], register[2]);
+        
+        Controlled H([register[0]], register[1]);
+        X(register[0]);
+
+        Ry(-2.0 * ArcCos(Sqrt(2.0/3.0)), register[0]);
     }
 
 

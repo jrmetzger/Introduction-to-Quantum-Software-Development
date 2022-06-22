@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I4n4FuJDD8WU09jraO66d+YLNM1YDaF2O97Dg7jqhkVqv6SJvy94vT5xdgaCaofJGNKi/cevdo9VL2jsN9tXdQ==",
+  "dgSpecHash": "TTCRcIMXgo9H113Sql1zimb4Vhhlow29/HRNIgPs8UgsSwicAwkSK2CEExwwOYeZS8p4GYqVVEnpJ8D3QpJnLw==",
   "success": true,
-  "projectFilePath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/QSharpExercises/QSharpExercises.csproj",
+  "projectFilePath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpExercises.csproj",
   "expectedPackageFiles": [
     "/Users/jmetzger/.nuget/packages/bond.core.csharp/9.0.3/bond.core.csharp.9.0.3.nupkg.sha512",
     "/Users/jmetzger/.nuget/packages/bond.csharp/9.0.3/bond.csharp.9.0.3.nupkg.sha512",

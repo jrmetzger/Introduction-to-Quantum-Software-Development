@@ -5922,11 +5922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/CSharpExercises/CSharpExercises.csproj",
+      "projectUniqueName": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/CSharpExercises/CSharpExercises.csproj",
       "projectName": "CSharpExercises",
-      "projectPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/CSharpExercises/CSharpExercises.csproj",
+      "projectPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/CSharpExercises/CSharpExercises.csproj",
       "packagesPath": "/Users/jmetzger/.nuget/packages/",
-      "outputPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/CSharpExercises/obj/",
+      "outputPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/CSharpExercises/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jmetzger/.nuget/NuGet/NuGet.Config"

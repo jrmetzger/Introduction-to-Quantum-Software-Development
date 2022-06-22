@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/QSharpExercises/QSharpExercises.csproj": {}
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpExercises.csproj": {}
   },
   "projects": {
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/QSharpExercises/QSharpExercises.csproj": {
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpExercises.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/QSharpExercises/QSharpExercises.csproj",
+        "projectUniqueName": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpExercises.csproj",
         "projectName": "QSharpExercises",
-        "projectPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/QSharpExercises/QSharpExercises.csproj",
+        "projectPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpExercises.csproj",
         "packagesPath": "/Users/jmetzger/.nuget/packages/",
-        "outputPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/QSharpExercises/obj/",
+        "outputPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jmetzger/.nuget/NuGet/NuGet.Config"

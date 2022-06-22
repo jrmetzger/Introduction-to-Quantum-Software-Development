@@ -1,10 +1,10 @@
 --proj
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/ConsoleSandbox"
 --build-exe
 --input
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
 --output
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/obj/qsharp/"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/obj/qsharp/"
 --references
     "/Users/jmetzger/.nuget/packages/azure.core/1.14.0/lib/netcoreapp2.1/Azure.Core.dll"
     "/Users/jmetzger/.nuget/packages/azure.identity/1.4.0/lib/netstandard2.0/Azure.Identity.dll"
@@ -42,7 +42,7 @@
     FullComputation
 --skip-monomorphization
 --package-load-fallback-folders
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/bin/Debug/netcoreapp3.1/"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/bin/Debug/netcoreapp3.1/"
 --assembly-properties
     AssemblyName:ConsoleSandbox
     ProcessorArchitecture:Unspecified

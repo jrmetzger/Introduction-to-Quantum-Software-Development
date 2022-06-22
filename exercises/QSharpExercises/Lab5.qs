@@ -70,8 +70,9 @@ namespace QSharpExercises.Lab5 {
         // same effect as not flipping it at all. Phase-flipping it three
         // times will have the same effect as only flipping it once, etc.
 
-        // TODO
-        fail "Not implemented.";
+        for qubit in input { 
+            CZ(qubit, output);
+        }
     }
 
 
@@ -116,8 +117,8 @@ namespace QSharpExercises.Lab5 {
         // You'll have to find a way to check the parity of the two qubits
         // without measuring anything.
 
-        // TODO
-        fail "Not implemented.";
+        CZ(input[firstIndex], output);
+        CZ(input[secondIndex], output);
     }
 
 
@@ -160,7 +161,36 @@ namespace QSharpExercises.Lab5 {
         // Note: Remember to put the input and output in the correct states
         // before running the oracle!
 
-        // TODO
-        fail "Not implemented.";
+        use (input, output) = (Qubit[inputLength], Qubit());
+        mutable isConstant = true;
+
+        // Apply H to all of the input qubits, resulting in uniform superposition
+        //   of all 2^n possible states
+        ApplyToEach(H, input);
+
+        // Apply X to the output qubit, so it is in the |1> state
+        X(output);
+
+        // Run the oracle in the input register and output qubit
+        oracle(input, output);
+
+        // Apply H to all of the input qubits
+        ApplyToEach(H, input);
+        
+        // Measure all of the input qubits
+        for qubit in input {
+
+            // If all of them are |0>, then the funciton is constant
+            if M(qubit) == One {
+                set isConstant = false;
+                X(qubit);
+            }
+            // If any of the input qubits is |1>, then the function is balanced
+
+        }
+        
+        X(output);
+
+        return isConstant;
     }
 }

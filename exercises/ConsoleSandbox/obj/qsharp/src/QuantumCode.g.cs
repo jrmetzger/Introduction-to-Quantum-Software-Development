@@ -13,12 +13,12 @@ using Microsoft.Quantum.Core;
 using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Simulation.Core;
 
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QSharpExercises.ConsoleSandbox\",\"Name\":\"RotateAndMeasureQubit\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs\",\"Position\":{\"Item1\":24,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"angle\"]},\"Type\":{\"Case\":\"Double\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":39}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Double\"},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Rotates a qubit (starting in the |0> state) around the Y axis of the\",\" Bloch Sphere by the given angle, measures it, and returns the result.\",\"\",\" # Input\",\" ## angle\",\" The angle (in radians) to rotate the qubit by. This angle should be\",\" measured from the +Z axis, towards the +X axis.\",\"\",\" # Output\",\" 0 if the qubit was measured in the |0> state, 1 if the qubit was\",\" measured in the |1> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QSharpExercises.ConsoleSandbox\",\"Name\":\"RotateAndMeasureQubit\"},\"Attributes\":[],\"SourceFile\":\"/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs\",\"Position\":{\"Item1\":24,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QSharpExercises.ConsoleSandbox\",\"Name\":\"RotateAndMeasureQubit\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs\",\"Position\":{\"Item1\":24,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"angle\"]},\"Type\":{\"Case\":\"Double\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":39}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Double\"},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" Rotates a qubit (starting in the |0> state) around the Y axis of the\",\" Bloch Sphere by the given angle, measures it, and returns the result.\",\"\",\" # Input\",\" ## angle\",\" The angle (in radians) to rotate the qubit by. This angle should be\",\" measured from the +Z axis, towards the +X axis.\",\"\",\" # Output\",\" 0 if the qubit was measured in the |0> state, 1 if the qubit was\",\" measured in the |1> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QSharpExercises.ConsoleSandbox\",\"Name\":\"RotateAndMeasureQubit\"},\"Attributes\":[],\"SourceFile\":\"/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs\",\"Position\":{\"Item1\":24,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
 #line hidden
 namespace QSharpExercises.ConsoleSandbox
 {
-    [SourceLocation("/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs", OperationFunctor.Body, 25, -1)]
+    [SourceLocation("/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs", OperationFunctor.Body, 25, -1)]
     public partial class RotateAndMeasureQubit : Operation<Double, Int64>, ICallable
     {
         public RotateAndMeasureQubit(IOperationFactory m) : base(m)
@@ -62,21 +62,21 @@ namespace QSharpExercises.ConsoleSandbox
             var angle = __in__;
 #line hidden
             {
-#line 26 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+#line 26 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
                 var qubit = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 27 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+#line 27 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
                     Microsoft__Quantum__Intrinsic__Ry.Apply((angle, qubit));
-#line 28 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+#line 28 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
                     var result = Microsoft__Quantum__Intrinsic__M.Apply(qubit);
-#line 29 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+#line 29 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
                     var resultInt = ((result == Result.One) ? 1L : 0L);
-#line 31 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+#line 31 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
                     Reset__.Apply(qubit);
-#line 32 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/QuantumCode.qs"
+#line 32 "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/QuantumCode.qs"
                     return resultInt;
                 }
 #line hidden

@@ -1,0 +1,69 @@
+--proj
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpExercises"
+--input
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab1.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab10.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab11.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab2.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab3.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab4.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab5.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab6.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab7.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab8.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Lab9.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/QSharpReference.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab10Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab11Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab1Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab2Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab3Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab4Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab5Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab6Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab7Tests/Lab7Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab8Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/Lab9Tests.qs"
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/Tests/TestUtils.qs"
+--output
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/obj/qsharp/"
+--references
+    "/Users/jmetzger/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.BondSchemas.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsCompilationManager.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsCompiler.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsCore.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsDataStructures.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsDocumentationParser.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.qsharp.core/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QSharp.Core.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.qsharp.foundation/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QSharp.Foundation.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsOptimizations.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsSyntaxProcessor.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsTextProcessor.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.compiler/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.QsTransformations.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.runtime.core/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Runtime.Core.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.simulators/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Simulation.Common.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.simulators/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.simulators/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Simulators.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.standard/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Standard.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.targets.interfaces/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Targets.Interfaces.dll"
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.xunit/0.18.2106148911/lib/netstandard2.1/Microsoft.Quantum.Xunit.dll"
+    "/Users/jmetzger/.nuget/packages/nuget.frameworks/5.0.0/lib/netstandard2.0/NuGet.Frameworks.dll"
+    "/Users/jmetzger/.nuget/packages/numsharp/0.20.5/lib/netstandard2.0/NumSharp.Core.dll"
+    "/Users/jmetzger/.nuget/packages/xunit.abstractions/2.0.3/lib/netstandard2.0/xunit.abstractions.dll"
+    "/Users/jmetzger/.nuget/packages/xunit.assert/2.4.1/lib/netstandard1.1/xunit.assert.dll"
+    "/Users/jmetzger/.nuget/packages/xunit.extensibility.core/2.4.1/lib/netstandard1.1/xunit.core.dll"
+    "/Users/jmetzger/.nuget/packages/xunit.extensibility.execution/2.4.1/lib/netstandard1.1/xunit.execution.dotnet.dll"
+--load
+    "/Users/jmetzger/.nuget/packages/microsoft.quantum.csharpgeneration/0.18.2106148911/build//../lib/netstandard2.1/Microsoft.Quantum.CSharpGeneration.dll"
+--runtime
+    FullComputation
+--skip-monomorphization
+--package-load-fallback-folders
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/QSharpExercises/bin/Debug/netcoreapp3.1/"
+--assembly-properties
+    AssemblyName:QSharpExercises
+    ProcessorArchitecture:Unspecified
+    QSharpOutputType:QSharpLibrary
+    ExecutionTarget:Any
+    DocsPackageId:QSharpExercises

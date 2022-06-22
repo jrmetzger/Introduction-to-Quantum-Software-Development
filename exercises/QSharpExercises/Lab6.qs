@@ -30,8 +30,12 @@ namespace QSharpExercises.Lab6 {
     /// classicalBits array.
     operation Exercise1 (classicalBits : Bool[], register : Qubit[]) : Unit
     is Adj {
-        // TODO
-        fail "Not implemented.";
+        for i in 0 .. Length(register) - 1 {
+            // XOR if classicalBit is a 1
+            if classicalBits[i] {
+                X(register[i]);
+            }
+        }
     }
 
 
@@ -50,8 +54,9 @@ namespace QSharpExercises.Lab6 {
     /// The target qubit that you must phase-flip if the register is in the
     /// |0...0> state. The target qubit will be provided in the |1> state.
     operation Exercise2 (register : Qubit[], target : Qubit) : Unit {
-        // TODO
-        fail "Not implemented.";
+        ApplyToEach(X, register);
+        Controlled Z(register, target);
+        ApplyToEach(X, register);
     }
 
 
@@ -104,8 +109,18 @@ namespace QSharpExercises.Lab6 {
         // then run Exercise1 in Adjoint mode to put the register back into
         // its original state.
 
-        // TODO
-        fail "Not implemented.";
+        // If the key is correct, original XOR key is encrypted
+        
+        // Do original XOR key
+        Exercise1(originalMessage, candidateEncryptionKey);
+
+        // If correct, result XOR encrupted is 0
+        Exercise1(encryptedMessage, candidateEncryptionKey);
+        Exercise2(candidateEncryptionKey, target);
+
+        // Reverse the XOR operations, Adjoint to reverse functions
+        Adjoint Exercise1(encryptedMessage, candidateEncryptionKey);
+        Adjoint Exercise1(originalMessage, candidateEncryptionKey);
     }
 
 
@@ -134,8 +149,10 @@ namespace QSharpExercises.Lab6 {
         register : Qubit[],
         target : Qubit
     ) : Unit {
-        // TODO
-        fail "Not implemented.";
+        oracle(register, target);
+        ApplyToEach(H, register);
+        Exercise2(register, target);
+        ApplyToEach(H, register);
     }
 
 
@@ -168,7 +185,17 @@ namespace QSharpExercises.Lab6 {
         // convenience.
         let iterations = Round(PowD(2.0, IntAsDouble(numberOfQubits) / 2.0));
 
-        // TODO
-        fail "Not implemented.";
+        use (register, target) = (Qubit[numberOfQubits], Qubit());
+        ApplyToEach(H, register);
+        X(target);
+
+        for i in 1 .. iterations {
+            Exercise4(oracle, register, target);
+        }
+
+        let results = MultiM(register);
+        ResetAll(register + [target]);
+        return ResultArrayAsBoolArray(results);
+
     }
 }

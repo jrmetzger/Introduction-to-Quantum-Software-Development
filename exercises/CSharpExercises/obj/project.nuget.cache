@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FupbV6BPB2+aW+ERg3BAwrbKlrF0maCCZ9wdZ0k/yxagjXZbYSq3OoWXe3BhdBKM2PwcbeNdtVT2P7KU/KntOg==",
+  "dgSpecHash": "ZwFpcjktuT5RcCVQd8BbWHRkve7SOquHAfUEL0+uC/JXt3IdYAgSVVHDo5ITsbLAS0V3IVxTlIauerJSCE0JAg==",
   "success": true,
-  "projectFilePath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/CSharpExercises/CSharpExercises.csproj",
+  "projectFilePath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/CSharpExercises/CSharpExercises.csproj",
   "expectedPackageFiles": [
     "/Users/jmetzger/.nuget/packages/coverlet.collector/3.0.3/coverlet.collector.3.0.3.nupkg.sha512",
     "/Users/jmetzger/.nuget/packages/microsoft.codecoverage/16.9.1/microsoft.codecoverage.16.9.1.nupkg.sha512",

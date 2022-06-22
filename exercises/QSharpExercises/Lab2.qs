@@ -32,9 +32,7 @@ namespace QSharpExercises.Lab2 {
     /// qubit.
     operation Exercise1 (qubitA : Qubit, qubitB : Qubit) : Unit {
         // Hint: you can do this with a single statement, using one gate.
-
-        // TODO
-        fail "Not implemented.";
+        SWAP(qubitA, qubitB);
     }
 
 
@@ -71,8 +69,9 @@ namespace QSharpExercises.Lab2 {
     /// # Remarks
     /// This will test your combined knowledge of arrays and multi-qubit gates.
     operation Exercise2 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        for i in 0 .. Length(register) / 2 - 1 {
+            Exercise1(register[i], register[Length(register) - i - 1]);
+        }
     }
 
 
@@ -106,9 +105,25 @@ namespace QSharpExercises.Lab2 {
         // Hint: you can start by putting all four registers into the state
         // 1/√2(|00> + |11>), then build the final state for each register 
         // from there.
+        
+        for register in registers {
+            H(register[0]);
+            // 1/√2(|00> + |10>)
+            CNOT(register[0], register[1]);
+            // 1/√2(|00> + |11>)
+        }
+        Z(registers[1][0]);
+        // 1/√2(|00> - |11>)
 
-        // TODO
-        fail "Not implemented.";
+        X(registers[2][0]);
+        // 1/√2(|01> + |10>)
+
+        X(registers[3][0]);
+        // 1/√2(|01> + |10>)
+
+        Z(registers[3][0]);
+        // 1/√2(|01> - |10>)
+
     }
 
 
@@ -134,8 +149,13 @@ namespace QSharpExercises.Lab2 {
     /// qubits in a register by making you apply your knowledge to a register
     /// with more than two qubits.
     operation Exercise4 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        H(register[0]);
+        // 1/√2(|00...0> - |10...0>)
+
+        for i in 1 .. Length(register) - 1 {
+            CNOT(register[0], register[i]);
+            // 1/√2(|00...0> - |11...1>)
+		}
     }
 
 
@@ -151,9 +171,22 @@ namespace QSharpExercises.Lab2 {
     /// 
     /// # Input
     /// ## register
-    /// The qubit register. It is in the state |00000>.
+    /// The qubit register. It is in the state |0000>.
     operation Exercise5 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        X(register[1]);
+        // 1/√2(|01> - |10>)
+
+        H(register[2]);
+        // 1/√2(|0100> - |0110>)
+
+        CNOT(register[2], register[3]);
+        // 1/√2(|0100> + |0111>)
+
+        X(register[3]);
+        // 1/√2(|0101> + |0110>)
+
+        Z(register[2]);
+        // 1/√2(|0101> - |0110>)
+
     }
 }

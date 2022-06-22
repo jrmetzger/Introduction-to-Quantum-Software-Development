@@ -32,8 +32,10 @@ namespace QSharpExercises.Lab10 {
         // this operation, so it can just be run backwards to decode the
         // logical qubit back into the original three unentangled qubits.
 
-        // TODO
-        fail "Not implemented.";
+        for spare in spares {
+            CNOT(original, spare);
+        }
+
     }
 
 
@@ -65,8 +67,21 @@ namespace QSharpExercises.Lab10 {
         // makes things easier. Don't forget to reset the qubits you allocate
         // back to the |0> state!
 
-        // TODO
-        fail "Not implemented.";
+        mutable syndrome = [];
+        use ancilla = Qubit();
+        
+        CNOT(register[0], ancilla);
+        CNOT(register[1], ancilla);
+        set syndrome += [M(ancilla)];
+
+        Reset(ancilla);
+
+        CNOT(register[0], ancilla);
+        CNOT(register[2], ancilla);
+        set syndrome += [M(ancilla)];
+
+        return syndrome;
+
     }
 
 
@@ -98,7 +113,18 @@ namespace QSharpExercises.Lab10 {
         // out to the console. You might want to consider printing the index
         // of the qubit you identified as broken to help with debugging.
 
-        // TODO
-        fail "Not implemented.";
+        // first qubit flipped
+        if ( syndromeMeasurement[0] == One and syndromeMeasurement[1] == One ) {
+            X(register[0]);
+        }
+        // second qubit flipped
+        if ( syndromeMeasurement[0] == One and syndromeMeasurement[1] == Zero ) {
+            X(register[1]);
+        }
+        // third qubit flipped
+        if ( syndromeMeasurement[0] == Zero and syndromeMeasurement[1] == One ) {
+            X(register[2]);
+        }
+
     }
 }

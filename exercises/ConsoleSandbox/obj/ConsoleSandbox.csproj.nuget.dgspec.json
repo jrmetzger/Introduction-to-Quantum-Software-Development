@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj": {}
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj": {}
   },
   "projects": {
-    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj": {
+    "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj",
+        "projectUniqueName": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj",
         "projectName": "ConsoleSandbox",
-        "projectPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj",
+        "projectPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj",
         "packagesPath": "/Users/jmetzger/.nuget/packages/",
-        "outputPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/obj/",
+        "outputPath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jmetzger/.nuget/NuGet/NuGet.Config"

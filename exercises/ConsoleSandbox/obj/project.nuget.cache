@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUu8Hul5OY7SLGmmtKwUd49iXuvDv58XNsYaF8wZomHHTHcEf8oIqGKrFActPigkTXPSoQQyMn+IYWausNWnAQ==",
+  "dgSpecHash": "HlrbZyzHx/jFoace7fMR1PJibZgRnrloTGDw/sQf1shklbLMvmyyxKh9B/O1xiyPqL9WwqUUzCPe3hc7O5CB+A==",
   "success": true,
-  "projectFilePath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction to Quantum Software Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj",
+  "projectFilePath": "/Users/jmetzger/Library/CloudStorage/OneDrive-TheMITRECorporation/Documents/Education/Introduction-to-Quantum-Software-Development/exercises/ConsoleSandbox/ConsoleSandbox.csproj",
   "expectedPackageFiles": [
     "/Users/jmetzger/.nuget/packages/azure.core/1.14.0/azure.core.1.14.0.nupkg.sha512",
     "/Users/jmetzger/.nuget/packages/azure.identity/1.4.0/azure.identity.1.4.0.nupkg.sha512",
