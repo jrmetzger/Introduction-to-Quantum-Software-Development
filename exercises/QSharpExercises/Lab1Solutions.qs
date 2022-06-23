@@ -110,7 +110,7 @@ namespace QSharpExercises.Solutions.Lab1 {
 
         for qubit in qubits {
             let result = M(qubit);
-            let resultInt = (result == Zero ? 0 | 1);
+            let resultInt = (result == One ? 1 | 0);
             set resultArray += [resultInt];
         }
 
